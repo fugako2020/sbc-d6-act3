@@ -1,14 +1,24 @@
 
 
+
 n = int(input("Enter the number of rows: "))
 
 
-for i in range(n, 0, -1):
+i = n
+
+
+while i > 0:
     print("*" * i)
+    i -= 1
 
 
-print("*" + " " * (n-2) + "*")
+print("*" + " " * (n - 2) + "*")
 
 
-for i in range(2, n + 1):
+i = 2
+
+
+while i <= n:
     print("*" * i)
+    i += 1
+
